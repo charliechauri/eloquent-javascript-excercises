@@ -23,10 +23,10 @@ const createChessBoard = (size = 8, symbol = '#') => {
   let rowCounter = 1;
   let board = '';
 
-  while(rowCounter <= size) {
+  while (rowCounter <= size) {
     let columnCounter = 1;
 
-    while(columnCounter <= size) {
+    while (columnCounter <= size) {
       board += (columnCounter % 2) === 0 ? ' ' : symbol;
       columnCounter += 1;
     }
@@ -36,6 +36,6 @@ const createChessBoard = (size = 8, symbol = '#') => {
   }
 
   console.log(board);
-}
+};
 
 createChessBoard(7, '$');

@@ -12,10 +12,10 @@
 const createTriangle = (numberOfRepetitions = 7, figure = '#') => {
   let output = figure;
 
-  while(output.length <= numberOfRepetitions) {
+  while (output.length <= numberOfRepetitions) {
     console.log(output);
     output += figure;
   }
-}
+};
 
 createTriangle();

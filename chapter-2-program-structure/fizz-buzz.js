@@ -8,7 +8,7 @@
   for numbers divisible by only one of those).
 */
 const fizzBuzz = (repetitions = 100) => {
-  for(let counter = 1; counter <= repetitions; counter += 1) {
+  for (let counter = 1; counter <= repetitions; counter += 1) {
     let output = (counter % 3) === 0 ? 'Fizz' : '';
     output += (counter % 5) === 0 ? 'Buzz' : '';
     output = output || counter;
