@@ -1,0 +1,10 @@
+{
+  "name": "eloquent-javascript-excercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/charliechauri/eloquent-javascript-excercises.git",
+  "author": "Carlos Echauri",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
