@@ -7,3 +7,5 @@
 - [X] [ChessBoard](./chapter-2-program-structure/chess-board.js)
 
 ## Chapter 3 - Functions
+
+- [] [Minimum](./chapter-3-functions/minimum.js)
