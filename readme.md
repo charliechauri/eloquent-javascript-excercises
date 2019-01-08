@@ -9,4 +9,4 @@
 ## Chapter 3 - Functions
 
 - [X] [Minimum](./chapter-3-functions/minimum.js)
-- [] [Recursion](./chapter-3-functions/recursion.js)
+- [X] [Recursion](./chapter-3-functions/recursion.js)
