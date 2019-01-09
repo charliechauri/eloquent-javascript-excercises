@@ -5,7 +5,7 @@
 const min = (numberOne, numberTwo) => {
   const { isNaN } = Number;
 
-  if (!isNaN(numberOne) || !isNaN(numberTwo || numberOne === numberTwo)) {
+  if (isNaN(numberOne) || isNaN(numberTwo || numberOne === numberTwo)) {
     return `ERROR. Invalid operation: both numbers are the same or they're not numbers at all.
     Arguments:
     * numberOne: ${numberOne}
@@ -15,4 +15,4 @@ const min = (numberOne, numberTwo) => {
   return numberOne < numberTwo ? numberOne : numberTwo;
 };
 
-console.log(min(10, 2));
+export default min;
