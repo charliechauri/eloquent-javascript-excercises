@@ -1,5 +1,5 @@
 /**
-* @name createTriangle
+* @name displayTriangle
 * @description Write a loop that makes seven calls to console.log to output the following triangle:
   #
   ##
@@ -9,7 +9,7 @@
   ######
   #######
 */
-const createTriangle = (numberOfRepetitions = 7, figure = '#') => {
+const displayTriangle = (numberOfRepetitions = 7, figure = '#') => {
   let output = figure;
 
   while (output.length <= numberOfRepetitions) {
@@ -18,4 +18,4 @@ const createTriangle = (numberOfRepetitions = 7, figure = '#') => {
   }
 };
 
-createTriangle();
+export default displayTriangle;

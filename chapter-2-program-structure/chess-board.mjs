@@ -1,5 +1,5 @@
 /**
-* @name createChessBoard
+* @name displayChessBoard
 * @description Write a program that creates a string that represents an 8×8 grid,
   using newline characters to separate lines. At each position of the grid
   there is either a space or a "#" character. The characters should form a chessboard.
@@ -19,7 +19,7 @@
   and change the program so that it works for any size,
   outputting a grid of the given width and height.
 */
-const createChessBoard = (size = 8, symbol = '#') => {
+const displayChessBoard = (size = 8, symbol = '#') => {
   let rowCounter = 1;
   let board = '';
 
@@ -38,4 +38,4 @@ const createChessBoard = (size = 8, symbol = '#') => {
   console.log(board);
 };
 
-createChessBoard(7, '$');
+export default displayChessBoard;

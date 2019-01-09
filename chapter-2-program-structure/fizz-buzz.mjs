@@ -17,4 +17,4 @@ const fizzBuzz = (repetitions = 100) => {
   }
 };
 
-fizzBuzz();
+export default fizzBuzz;

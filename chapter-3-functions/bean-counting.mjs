@@ -4,7 +4,7 @@
 * @description Write a function that takes a string as its only argument
 * and returns a number that indicates how many uppercase “B” characters there are in the string.
 */
-const countBs = (string = 'BB-8') => countChar(string, 'B');
+export const countBs = (string = 'BB-8') => countChar(string, 'B');
 
 /**
 * @name countChar
@@ -14,7 +14,7 @@ const countBs = (string = 'BB-8') => countChar(string, 'B');
 * except it takes a second argument that indicates the character that is to be counted (rather than
 * counting only uppercase “B” characters). Rewrite countBs to make use of this new function
 */
-function countChar(string, lookupChar) {
+export function countChar(string, lookupChar) {
   let repetitions = 0;
 
   for (let index = 0, { length } = string; index < length; index += 1) {
@@ -25,7 +25,3 @@ function countChar(string, lookupChar) {
 
   return repetitions;
 }
-
-console.log(`Number of 'B's included on 'BB-8': ${countBs()}`);
-console.log(`Number of 'B' included on 'Hello': ${countBs('Hello')}`);
-console.log(`Number of 'B' included on 'Bebe': ${countBs('Bebe')}`);

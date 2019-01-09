@@ -19,7 +19,4 @@ const isEven = (number) => {
   return number < 0 ? isEven(number + 2) : isEven(number - 2);
 };
 
-console.log(`Is ${0} even?: ${isEven(0)}`);
-console.log(`Is ${1} even?: ${isEven(1)}`);
-console.log(`Is ${5} even?: ${isEven(5)}`);
-console.log(`Is ${-10} even?: ${isEven(-10)}`);
+export default isEven;
