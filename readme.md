@@ -1,3 +1,4 @@
+
 # Eloquent JavaScript exercises
 
 ## Chapter 2 - Program Structure
@@ -10,3 +11,4 @@
 
 - [X] [Minimum](./chapter-3-functions/minimum.js)
 - [X] [Recursion](./chapter-3-functions/recursion.js)
+- [X] [Bean counting](./chapter-3-functions/bean-counting.js)
