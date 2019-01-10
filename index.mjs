@@ -4,12 +4,12 @@
 * @todo Add command line parameters 'chapter' and 'exercise' to select a specific exercise to run.
 */
 
-import displayChessBoard from './chapter-2-program-structure/chess-board';
-import displayTriangle from './chapter-2-program-structure/triangle';
-import fizzBuzz from './chapter-2-program-structure/fizz-buzz';
-import min from './chapter-3-functions/minimum';
-import isEven from './chapter-3-functions/recursion';
-import { countBs } from './chapter-3-functions/bean-counting';
+import displayChessBoard from './exercises/chapter-2-program-structure/chess-board';
+import displayTriangle from './exercises/chapter-2-program-structure/triangle';
+import fizzBuzz from './exercises/chapter-2-program-structure/fizz-buzz';
+import min from './exercises/chapter-3-functions/minimum';
+import isEven from './exercises/chapter-3-functions/recursion';
+import { countBs } from './exercises/chapter-3-functions/bean-counting';
 
 // Chapter 2
 displayTriangle();
