@@ -12,3 +12,5 @@
 1. [Minimum](./exercises/chapter-3-functions/minimum.mjs)
 2. [Recursion](./exercises/chapter-3-functions/recursion.mjs)
 3. [Bean counting](./exercises/chapter-3-functions/bean-counting.mjs)
+
+@todo Describe instructions for running exercises

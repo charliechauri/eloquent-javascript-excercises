@@ -1,9 +1,7 @@
 /**
 * @name index
 * @description This script runs all exercises
-* @todo Add command line parameters 'chapter' and 'exercise' to select a specific exercise to run.
 */
-
 import displayChessBoard from './exercises/chapter-2-program-structure/chess-board';
 import displayTriangle from './exercises/chapter-2-program-structure/triangle';
 import fizzBuzz from './exercises/chapter-2-program-structure/fizz-buzz';
@@ -11,6 +9,9 @@ import min from './exercises/chapter-3-functions/minimum';
 import isEven from './exercises/chapter-3-functions/recursion';
 import { countBs } from './exercises/chapter-3-functions/bean-counting';
 
+const getArgValue = argIndex => process.argv[argIndex].split('=')[1];
+const chapter = getArgValue(2);
+const exercise = getArgValue(3);
 const exercises = {
   chapters: {
     2: {
@@ -36,3 +37,17 @@ const exercises = {
     },
   },
 };
+
+const exerciseToExec = exercises.chapters[`${chapter}`][`${exercise}`];
+
+if (typeof exerciseToExec === 'function') {
+  console.log(`Executing: chapter ${chapter}, exercise ${exercise}`);
+  exerciseToExec();
+} else {
+  console.log(`ERROR
+    The combination of chapter ${chapter}, exercise ${exercise} is not valid.
+    Please enter a valids chapter and exercise numbers (see details on readme.md)
+    in the following format 'yarn run start chapter=2 exercise=1'
+
+  `);
+}
