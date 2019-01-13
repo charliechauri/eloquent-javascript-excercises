@@ -42,7 +42,7 @@ const exercises = {
         const end = 10;
         console.log(`Sum of numbers contained in range ${start} - ${end}:`, sum(range(start, end)));
       },
-    }
+    },
   },
 };
 
