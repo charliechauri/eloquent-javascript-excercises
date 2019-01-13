@@ -31,3 +31,6 @@ This project contains the exercises proposed by _Eloquent JavaScript_ book.
 1. [Minimum](./exercises/chapter-3-functions/minimum.mjs)
 2. [Recursion](./exercises/chapter-3-functions/recursion.mjs)
 3. [Bean counting](./exercises/chapter-3-functions/bean-counting.mjs)
+
+### Chapter 4 - Data structures
+1. [Sum of a range](./exercises/chapter-4-data-structures/sum-of-a-range.mjs)
