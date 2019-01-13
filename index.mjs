@@ -8,6 +8,7 @@ import fizzBuzz from './exercises/chapter-2-program-structure/fizz-buzz';
 import min from './exercises/chapter-3-functions/minimum';
 import isEven from './exercises/chapter-3-functions/recursion';
 import { countBs } from './exercises/chapter-3-functions/bean-counting';
+import { range, sum } from './exercises/chapter-4-data-structures/sum-of-a-range';
 
 const getArgValue = argIndex => process.argv[argIndex].split('=')[1];
 const chapter = getArgValue(2);
@@ -35,6 +36,13 @@ const exercises = {
         console.log(`Number of 'B' included on 'Bebe': ${countBs('Bebe')}`);
       },
     },
+    4: {
+      1: () => {
+        const start = 1;
+        const end = 10;
+        console.log(`Sum of numbers contained in range ${start} - ${end}:`, sum(range(start, end)));
+      },
+    }
   },
 };
 
