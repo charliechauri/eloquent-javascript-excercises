@@ -6,6 +6,9 @@
 * @param {number} end
 * @return {number[]}
 */
+
+const { isNaN } = Number;
+
 export const range = (start = 1, end = 10, step = 1) => {
   if (isNaN(start) || isNaN(end)) {
     throw new Error(`
