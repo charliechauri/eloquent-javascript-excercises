@@ -9,6 +9,7 @@ import min from './exercises/chapter-3-functions/minimum';
 import isEven from './exercises/chapter-3-functions/recursion';
 import { countBs } from './exercises/chapter-3-functions/bean-counting';
 import { range, sum } from './exercises/chapter-4-data-structures/sum-of-a-range';
+import { reverseArray, reverseArrayInPlace } from './exercises/chapter-4-data-structures/reversing-an-array';
 
 const getArgValue = argIndex => process.argv[argIndex].split('=')[1];
 const chapter = getArgValue(2);
@@ -42,6 +43,23 @@ const exercises = {
         const end = 10;
         console.log(`Sum of numbers contained in range ${start} - ${end}:`, sum(range(start, end)));
       },
+      2: () => {
+        const sampleArray = [1, 2, 3, 4, 5];
+        const newArray = reverseArray(sampleArray);
+        console.log(`Reverse an array and create a new one
+          Sample array: [${sampleArray}]
+          New array: [${newArray}]
+        `);
+
+        const originalArray = [1, 2, 3, 4, 5];
+        console.log(`Modify an array reversing it
+          Before modifying: [${originalArray}]
+        `);
+        reverseArrayInPlace(originalArray);
+        console.log(`
+          After modifying: [${originalArray}]
+        `);
+      },
     },
   },
 };
@@ -56,6 +74,5 @@ if (typeof exerciseToExec === 'function') {
     The combination of chapter ${chapter}, exercise ${exercise} is not valid.
     Please enter a valids chapter and exercise numbers (see details on readme.md)
     in the following format 'yarn run start chapter=2 exercise=1'
-
   `);
 }

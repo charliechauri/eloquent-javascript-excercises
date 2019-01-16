@@ -34,3 +34,4 @@ This project contains the exercises proposed by _Eloquent JavaScript_ book.
 
 ### Chapter 4 - Data structures
 1. [Sum of a range](./exercises/chapter-4-data-structures/sum-of-a-range.mjs)
+2. [Reversing an array](./exercises/chapter-4-data-structures/reversing-an-array.mjs)
