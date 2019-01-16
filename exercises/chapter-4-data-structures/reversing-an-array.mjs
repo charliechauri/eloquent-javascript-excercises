@@ -8,11 +8,9 @@
 export const reverseArray = (array = []) => {
   const newArray = [];
 
-  for (let index = array.length; index >= 0; index -= 1) {
+  for (let index = array.length; index > 0; index -= 1) {
     newArray.push(array[index - 1]);
   }
-
-  newArray.pop(); // @todo Try another way to do it in order to delete this line.
 
   return newArray;
 };
@@ -24,15 +22,17 @@ export const reverseArray = (array = []) => {
 */
 export const reverseArrayInPlace = (array) => {
   const { length } = array;
-  const repetitions = length / 2;
+  const hasMedian = (length % 2) !== 0;
+  const repetitions = hasMedian ? (length / 2) - 1 : length / 2;
   let index = 0;
 
   while (index < repetitions) {
-    const prevItem = array[length - index];
-    const nextItem = array[index];
-    array[index] = prevItem; // eslint-disable-line
-    array[length - index] = nextItem; // eslint-disable-line
+    const rightIndex = length - index - 1;
+    const left = array[index];
+    const right = array[rightIndex];
+
+    array[index] = right; // eslint-disable-line
+    array[rightIndex] = left; // eslint-disable-line
     index += 1;
   }
-  array.shift(); // @todo Try another way to do it in order to delete this line.
 };
