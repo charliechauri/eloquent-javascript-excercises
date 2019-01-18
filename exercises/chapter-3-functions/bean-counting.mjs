@@ -1,12 +1,4 @@
 /**
-* @name countBs
-* @param {string} string
-* @description Write a function that takes a string as its only argument
-* and returns a number that indicates how many uppercase “B” characters there are in the string.
-*/
-export const countBs = (string = 'BB-8') => countChar(string, 'B');
-
-/**
 * @name countChar
 * @param {string} string
 * @param {string} lookupChar
@@ -25,3 +17,11 @@ export function countChar(string, lookupChar) {
 
   return repetitions;
 }
+
+/**
+* @name countBs
+* @param {string} string
+* @description Write a function that takes a string as its only argument
+* and returns a number that indicates how many uppercase “B” characters there are in the string.
+*/
+export const countBs = (string = 'BB-8') => countChar(string, 'B');
